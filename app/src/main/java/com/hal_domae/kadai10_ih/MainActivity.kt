@@ -42,4 +42,13 @@ class MainActivity : AppCompatActivity() {
         super.onResume()
         Log.i("LifeCycle", "MainActivityのonResumeが実行")
     }
+
+    // アプリがバックグラウンドに移動したことを示すために実行される
+    // Activityが一次停止状態
+    // 処理を停止しておく時などに使用
+    // 非常に短いのでデータの保存等は行わない
+    override fun onPause() {
+        super.onPause()
+        Log.i("LifeCycle", "MainActivityのonPauseが実行")
+    }
 }
