@@ -10,7 +10,7 @@ import androidx.core.view.WindowInsetsCompat
 class ResultActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        Log.i("LifeCycle", "ResultActivityのonStartが実行")
+        Log.i("LifeCycle", "ResultActivityのonCreateが実行")
         enableEdgeToEdge()
         setContentView(R.layout.activity_result)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
